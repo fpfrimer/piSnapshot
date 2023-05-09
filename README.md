@@ -37,12 +37,6 @@ git clone https://github.com/username/piSnapshot.git
 cd piSnapshot
 ```
 
-3. Execute o script:
-
-```bash
-python3 capture.py
-```
-
 ## Uso
 
 Você pode executar o script `snap.py` para capturar uma imagem. O script aceita até três argumentos:
