@@ -18,29 +18,29 @@ Este projeto foi desenvolvido para facilitar a captura de imagens com uma Raspbe
 
 ## Pré-requisitos
 
-- Raspberry Pi com Raspbian OS ou outro sistema operacional compatível
-- Câmera Picamera2 compatível
-- Python 3
-
+- **Raspberry Pi**: Uma placa Raspberry Pi para executar o script e controlar a câmera. Qualquer modelo compatível com a câmera deve funcionar, como o Raspberry Pi 3 ou Raspberry Pi 4;
+- **Sistema Operacional**: Raspbian OS (ou Raspberry Pi OS) instalado na Raspberry Pi. Outros sistemas operacionais compatíveis com Raspberry Pi e a câmera Picamera2 também podem funcionar;
+- **Câmera**: Uma câmera compatível com a Raspberry Pi, como a câmera Picamera2. Certifique-se de que esteja corretamente conectada à Raspberry Pi;
+- **Python 3**: O script foi escrito em Python 3, portanto, você precisará do Python 3 instalado na Raspberry Pi;
+- **Dependências do Python**: picamera2.
+- 
 ## Instalação
 
-1. Vaerifique os pré-requisitos:
-
-- **Raspberry Pi**: Uma placa Raspberry Pi para executar o script e controlar a câmera. Qualquer modelo compatível com a câmera deve funcionar, como o Raspberry Pi 3 ou Raspberry Pi 4.
-- **Sistema Operacional**: Raspbian OS (ou Raspberry Pi OS) instalado na Raspberry Pi. Outros sistemas operacionais compatíveis com Raspberry Pi e a câmera Picamera2 também podem funcionar.
-- **Câmera**: Uma câmera compatível com a Raspberry Pi, como a câmera Picamera2. Certifique-se de que esteja corretamente conectada à Raspberry Pi.
-- **Python 3**: O script foi escrito em Python 3, portanto, você precisará do Python 3 instalado na Raspberry Pi.
-- **Dependências do Python**: As bibliotecas necessárias para executar o script, como a biblioteca picamera2 e outras bibliotecas que você possa estar utilizando.
-
-2. Clone este repositório em sua Raspberry Pi:
+1. Clone este repositório em sua Raspberry Pi:
 
 ```bash
 git clone https://github.com/username/piSnapshot.git
 ```
-3. Acesse a pasta do projeto:
+2. Acesse a pasta do projeto:
 
 ```bash
 cd piSnapshot
+```
+
+3. Execute o script:
+
+```bash
+python3 capture.py
 ```
 
 ## Uso
@@ -54,7 +54,7 @@ Você pode executar o script `snap.py` para capturar uma imagem. O script aceita
 Exemplo de uso:
 
 ```bash
-python3 capture.py /caminho/para/a/imagem.bmp 640 480
+python3 snap.py /caminho/para/a/imagem.bmp 640 480
 ```
 Isso capturará uma imagem com resolução de 640x480 pixels e salvará no caminho especificado.
 
